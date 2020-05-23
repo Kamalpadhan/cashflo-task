@@ -65,7 +65,6 @@ app.use((req, res, next) => {
 		// otherwise, return a bad request error
 		return res.status(400).end("invalid request");
 	}
-  console.log(payload.username);
   next();
 
 });
